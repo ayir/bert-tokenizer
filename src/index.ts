@@ -125,7 +125,7 @@ export class BertTokenizer{
     let inputMask: number[] = [];
     let segmentIds: number[] = [];
     const tokenIds = this.tokenize(text);
-    const maxSeqLength = 128;
+    const maxSeqLength = 256;
 
     inputIds.push(this.clsId)
     inputMask.push(1);
